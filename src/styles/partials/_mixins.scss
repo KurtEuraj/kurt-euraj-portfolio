@@ -37,9 +37,8 @@
     font-size: 1.25rem;
     color: $white;
     text-decoration: none;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $border-underline ;
     padding-bottom: .75rem;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 // desktop text styles
@@ -60,7 +59,7 @@
 
 @mixin desktop-nav-link {
     font-size: 1.25rem;
-    color: $black;
+    color: $white;
     text-decoration: none;
     padding-bottom: .5rem;
     transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
