@@ -9,6 +9,7 @@ import useScreenSize from "../../hooks/useScreenSize";
 function Header() {
     gsap.registerPlugin(useGSAP, ScrollTrigger);
     const tl = gsap.timeline();
+    const navTl = gsap.timeline();
 
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
@@ -19,6 +20,18 @@ function Header() {
     }
 
     const { contextSafe } = useGSAP(() => {
+        navTl.set(".nav-bar", {
+            opacity: 0,
+        })
+        navTl.fromTo(".nav-bar", {
+            y: -100,
+        },{
+            duration: 1,
+            y: 0,
+        })
+        navTl.to(".nav-bar", {
+            opacity: 1
+        }, 0.75)
     }, {})
 
     const clickMobileNav = contextSafe(() => {

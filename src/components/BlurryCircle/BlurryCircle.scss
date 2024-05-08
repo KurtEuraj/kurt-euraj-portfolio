@@ -1,0 +1,39 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.blurry-circle {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    color: #FFF;
+    opacity: 90%;
+    z-index: -1;
+    width: 100%;
+
+    &__item-1 {
+        width: 10rem;
+        height: 10rem;
+        margin-right: -1rem;
+        transform: scale(3);
+
+        @include desktop {
+            width: 15rem;
+            height: 15rem;
+            margin-right: -3rem;
+        }
+    }
+
+    &__item-2 {
+        width: 10rem;
+        height: 10rem;
+        margin-left: -1rem;
+        transform: scale(3);
+
+        @include desktop {
+            width: 15rem;
+            height: 15rem;
+            margin-left: -3rem;
+        }
+    }
+}
