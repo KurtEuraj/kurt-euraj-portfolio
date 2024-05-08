@@ -8,7 +8,7 @@ function BlurryCircle() {
     gsap.registerPlugin(useGSAP, ScrollTrigger);
     const tl = gsap.timeline();
 
-    const { contextSafe } = useGSAP(() => {
+    useGSAP(() => {
         tl.to(".blurry-circle", {
             duration: 2,
             y: "random(-200vh, 200vh)",

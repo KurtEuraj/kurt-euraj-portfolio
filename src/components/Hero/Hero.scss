@@ -47,6 +47,8 @@
         border-radius: 30px;
         border: 1px solid transparent;
         transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        cursor: pointer;
+        opacity: 0;
         @include mobile-body;
 
         &:hover {
