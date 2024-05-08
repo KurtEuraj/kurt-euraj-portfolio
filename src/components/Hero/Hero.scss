@@ -10,6 +10,8 @@
     color: $white;
     gap: 1rem;
     margin-top: 10rem;
+    position: relative;
+    z-index: -1;
 
     @include tablet {
         margin: $tablet-container;

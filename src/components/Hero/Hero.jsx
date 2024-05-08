@@ -33,7 +33,7 @@ function Hero() {
             x: 10
         }, {
             duration: 0.75,
-            stagger: 0.5, 
+            stagger: 0.25, 
             opacity: 1,
             x: 0
         }, 0.5)
