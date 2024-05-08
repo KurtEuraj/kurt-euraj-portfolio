@@ -1,0 +1,65 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    margin: $mobile-container;
+    color: $white;
+
+    @include tablet {
+        margin: $tablet-container;
+    }
+
+    @include desktop {
+        margin: $desktop-container;
+        padding-top: 7rem;
+    }
+
+    &__wrapper {
+        padding: 1.5rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5rem);
+        -webkit-backdrop-filter: blur(5rem);
+        background: $white-transparent;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include tablet {
+            padding: 3rem;
+            backdrop-filter: blur(10rem);
+            -webkit-backdrop-filter: blur(10rem);
+        }
+    }
+
+    &__heading {
+        @include mobile-heading;
+
+        @include tablet {
+            @include desktop-heading;
+            text-align: center;
+        }
+    }
+
+    &__body-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include desktop {
+            max-width: 30rem;
+        }
+    }
+
+    &__body {
+        @include mobile-body;
+
+        @include tablet {
+            @include desktop-body;
+        }
+    }
+}
