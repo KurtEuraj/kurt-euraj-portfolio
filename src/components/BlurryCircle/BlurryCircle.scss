@@ -4,7 +4,6 @@
 .blurry-circle {
     display: flex;
     justify-content: center;
-    filter: blur(3rem);
     position: fixed;
     top: 50%;
     color: #FFF;
@@ -12,29 +11,29 @@
     z-index: -1;
     width: 100%;
 
-    @include desktop {
-        filter: blur(8rem);
-    }
-
     &__item-1 {
         width: 10rem;
         height: 10rem;
-        background-color: $red;
+        margin-right: -1rem;
+        transform: scale(3);
 
         @include desktop {
             width: 15rem;
             height: 15rem;
+            margin-right: -3rem;
         }
     }
 
     &__item-2 {
         width: 10rem;
         height: 10rem;
-        background-color: $blue;
+        margin-left: -1rem;
+        transform: scale(3);
 
         @include desktop {
             width: 15rem;
             height: 15rem;
+            margin-left: -3rem;
         }
     }
 }

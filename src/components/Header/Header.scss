@@ -4,6 +4,7 @@
 .nav-bar {
     border-bottom: 1px solid $border-underline;
     position: relative;
+    z-index: 1;
 
     &__wrapper {
         margin: $mobile-container;
@@ -80,7 +81,6 @@
 
         @include tablet {
             margin: $tablet-container;
-            margin-top: 6rem;
         }
     }
 
