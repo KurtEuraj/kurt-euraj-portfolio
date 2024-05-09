@@ -32,6 +32,9 @@ function Header() {
         navTl.to(".nav-bar", {
             opacity: 1
         }, 0.75)
+        gsap.set(".nav-bar__mobile-wrapper", {
+            y: "-100vh",
+        }, 0)
     }, {})
 
     const clickMobileNav = contextSafe(() => {
@@ -59,7 +62,6 @@ function Header() {
             }, "-=0.1")
             tl.fromTo(".nav-bar__mobile-wrapper", {
                 opacity: 0,
-                y: "-100vh",
             }, {
                 duration: 0.25,
                 opacity: 1,
