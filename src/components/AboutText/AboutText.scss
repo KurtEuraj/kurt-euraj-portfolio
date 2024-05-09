@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    padding: 3rem 0;
     margin: $mobile-container;
     color: $white;
 
@@ -15,7 +15,7 @@
 
     @include desktop {
         margin: $desktop-container;
-        padding-top: 7rem;
+        padding: 5rem 0;
     }
 
     &__wrapper {
@@ -51,7 +51,7 @@
         gap: 1rem;
 
         @include desktop {
-            max-width: 30rem;
+            max-width: 35rem;
         }
     }
 
