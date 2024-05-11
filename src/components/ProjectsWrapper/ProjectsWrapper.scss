@@ -1,0 +1,30 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    margin: $mobile-container;
+    gap: 2rem;
+
+    &__heading {
+        @include mobile-heading;
+        color: $white;
+    }
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 3rem;
+
+    @include desktop {
+        flex-direction: row;
+    }
+}
