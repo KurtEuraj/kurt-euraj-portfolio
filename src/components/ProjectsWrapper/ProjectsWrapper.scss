@@ -1,0 +1,44 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    margin: $mobile-container;
+    gap: 2rem;
+
+    @include tablet {
+        margin: $tablet-container;
+    }
+
+    @include desktop {
+        margin: $desktop-container;
+    }
+
+    &__heading {
+        @include mobile-heading;
+        color: $white;
+
+        @include tablet {
+            @include desktop-heading;
+        }
+    }
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+
+    @include desktop {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}

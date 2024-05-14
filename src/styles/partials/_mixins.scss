@@ -35,6 +35,11 @@
     font-weight: 700;
 }
 
+@mixin mobile-project-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 @mixin mobile-nav-link {
     font-size: 1.25rem;
     color: $white;
@@ -63,4 +68,14 @@
     font-size: 1.25rem;
     color: $white;
     text-decoration: none;
+}
+
+@mixin desktop-project-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+@mixin desktop-label {
+    font-size: 1rem;
+    font-weight: 300;
 }

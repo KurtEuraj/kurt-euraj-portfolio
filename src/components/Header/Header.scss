@@ -4,7 +4,7 @@
 .nav-bar {
     border-bottom: 1px solid $border-underline;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 
     &__wrapper {
         margin: $mobile-container;
