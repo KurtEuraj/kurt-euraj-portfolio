@@ -1,0 +1,81 @@
+@use "variables" as *;
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+// mobile text styles
+@mixin mobile-label {
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+@mixin mobile-body {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@mixin mobile-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@mixin mobile-sub-head {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+@mixin mobile-project-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@mixin mobile-nav-link {
+    font-size: 1.25rem;
+    color: $white;
+    text-decoration: none;
+    border-bottom: 1px solid $white;
+    padding-bottom: .75rem;
+}
+
+// desktop text styles
+@mixin desktop-body {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@mixin desktop-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+@mixin desktop-sub-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@mixin desktop-nav-link {
+    font-size: 1.25rem;
+    color: $white;
+    text-decoration: none;
+}
+
+@mixin desktop-project-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+@mixin desktop-label {
+    font-size: 1rem;
+    font-weight: 300;
+}
